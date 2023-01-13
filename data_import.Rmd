@@ -5,6 +5,7 @@ output: github_document
 
 ```{r setup, warning = F}
 library(tidyverse)
+library(readxl)
 ```
 
 ## Read in some data

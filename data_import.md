@@ -14,6 +14,10 @@ library(tidyverse)
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
 
+``` r
+library(readxl)
+```
+
 ## Read in some data
 
 Read in the litters datasets
