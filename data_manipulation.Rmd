@@ -1,0 +1,13 @@
+---
+title: "data manipulation"
+output: github_document
+---
+
+```{r setup, warning = F}
+library(tidyverse)
+library(readxl)
+```
+
+
+
+
