@@ -15,5 +15,44 @@ litters_df = read_csv("./data/FAS_litters.csv")
 litters_df = janitor :: clean_names(litters_df)
 ```
 
+## 'select'
+
+choose some columns and not others
+
+```{r}
+select(litters_df, litter_number, pups_survive)
+```
+
+Renaming columns
+
+```{r}
+select(litters_df, team = group, Litter_number = litter_number)
+```
+
+```{r}
+rename(litters_df, team = group, Litter_number = litter_number)
+```
+
+select helper
+
+```{r}
+select(litters_df, starts_with("pups"))
+```
+
+```{r}
+select(litters_df, litter_number, everything())
+```
+
+```{r}
+relocate(litters_df, litter_number)
+```
+
+
+
+
+
+
+
+
 
 
