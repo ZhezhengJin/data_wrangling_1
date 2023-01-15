@@ -47,10 +47,27 @@ select(litters_df, litter_number, everything())
 relocate(litters_df, litter_number)
 ```
 
+## 'filter'
 
+```{r}
+filter(litters_df, pups_survive > 4)
+```
 
+```{r}
+filter(litters_df, pups_survive == 8)
+```
 
+```{r}
+filter(litters_df, pups_survive != 8)
+```
 
+```{r}
+filter(litters_df, group == "Con7")
+```
+
+```{r}
+filter(litters_df, group %in% c("Con7", "Low7"))
+```
 
 
 
