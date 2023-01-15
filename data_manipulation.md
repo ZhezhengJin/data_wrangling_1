@@ -266,3 +266,25 @@ filter(litters_df, group %in% c("Con7", "Low7"))
     ## 15 Low7  #112                  23.9        40.5       19       6       1       1
     ## # … with abbreviated variable names ¹​gd_of_birth, ²​pups_born_alive,
     ## #   ³​pups_dead_birth, ⁴​pups_survive
+
+## ‘mutate’
+
+``` r
+mutate(litters_df, group = str_to_lower(group))
+```
+
+    ## # A tibble: 49 × 8
+    ##    group litter_number   gd0_weight gd18_weight gd_of_…¹ pups_…² pups_…³ pups_…⁴
+    ##    <chr> <chr>                <dbl>       <dbl>    <dbl>   <dbl>   <dbl>   <dbl>
+    ##  1 con7  #85                   19.7        34.7       20       3       4       3
+    ##  2 con7  #1/2/95/2             27          42         19       8       0       7
+    ##  3 con7  #5/5/3/83/3-3         26          41.4       19       6       0       5
+    ##  4 con7  #5/4/2/95/2           28.5        44.1       19       5       1       4
+    ##  5 con7  #4/2/95/3-3           NA          NA         20       6       0       6
+    ##  6 con7  #2/2/95/3-2           NA          NA         20       6       0       4
+    ##  7 con7  #1/5/3/83/3-3/2       NA          NA         20       9       0       9
+    ##  8 con8  #3/83/3-3             NA          NA         20       9       1       8
+    ##  9 con8  #2/95/3               NA          NA         20       8       0       8
+    ## 10 con8  #3/5/2/2/95           28.5        NA         20       8       0       8
+    ## # … with 39 more rows, and abbreviated variable names ¹​gd_of_birth,
+    ## #   ²​pups_born_alive, ³​pups_dead_birth, ⁴​pups_survive

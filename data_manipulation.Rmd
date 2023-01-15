@@ -69,6 +69,11 @@ filter(litters_df, group == "Con7")
 filter(litters_df, group %in% c("Con7", "Low7"))
 ```
 
+## 'mutate'
+
+```{r}
+mutate(litters_df, group = str_to_lower(group))
+```
 
 
 
