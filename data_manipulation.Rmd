@@ -75,6 +75,11 @@ filter(litters_df, group %in% c("Con7", "Low7"))
 mutate(litters_df, group = str_to_lower(group))
 ```
 
+## 'arrange'
+
+```{r}
+arrange(litters_df, pups_survive)
+```
 
 
 

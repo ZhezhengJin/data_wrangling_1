@@ -288,3 +288,25 @@ mutate(litters_df, group = str_to_lower(group))
     ## 10 con8  #3/5/2/2/95           28.5        NA         20       8       0       8
     ## # … with 39 more rows, and abbreviated variable names ¹​gd_of_birth,
     ## #   ²​pups_born_alive, ³​pups_dead_birth, ⁴​pups_survive
+
+## ‘arrange’
+
+``` r
+arrange(litters_df, pups_survive)
+```
+
+    ## # A tibble: 49 × 8
+    ##    group litter_number gd0_weight gd18_weight gd_of_bi…¹ pups_…² pups_…³ pups_…⁴
+    ##    <chr> <chr>              <dbl>       <dbl>      <dbl>   <dbl>   <dbl>   <dbl>
+    ##  1 Low7  #112                23.9        40.5         19       6       1       1
+    ##  2 Mod7  #106                21.7        37.8         20       5       0       2
+    ##  3 Con7  #85                 19.7        34.7         20       3       4       3
+    ##  4 Mod7  #94/2               24.4        42.9         19       7       1       3
+    ##  5 Low7  #111                25.5        44.6         20       3       2       3
+    ##  6 Con7  #5/4/2/95/2         28.5        44.1         19       5       1       4
+    ##  7 Con7  #2/2/95/3-2         NA          NA           20       6       0       4
+    ##  8 Con8  #2/2/95/2           NA          NA           19       5       0       4
+    ##  9 Mod7  #62                 19.5        35.9         19       7       2       4
+    ## 10 Low8  #4/84               21.8        35.2         20       4       0       4
+    ## # … with 39 more rows, and abbreviated variable names ¹​gd_of_birth,
+    ## #   ²​pups_born_alive, ³​pups_dead_birth, ⁴​pups_survive
